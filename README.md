@@ -1,54 +1,68 @@
-# OmniSense Embedded Robo
+# OmniSense Embedded Rover
 
-An embedded robotics project built around a 4WD rover using C++ and Arduino-based hardware.
+An autonomous 4WD rover built around custom C++ firmware, sensor-based
+obstacle detection and real-time hardware telemetry.
 
-The project combines obstacle detection, motor control, Bluetooth input and a small OLED interface into a single firmware system.
+## Overview
 
-## Features
+OmniSense is an embedded robotics project focused on building a small
+autonomous rover from the hardware level up.
 
-- Ultrasonic obstacle detection
-- Autonomous obstacle-avoidance mode
+The project combines sensor input, motor control, autonomous navigation
+and live system feedback into a single embedded system.
+
+## Core Features
+
+- Autonomous obstacle detection
+- Ultrasonic sensor-based distance measurement
 - Manual Bluetooth control
-- OLED status display
-- Buzzer alerts
-- Motor control
+- Runtime switching between autonomous and manual operation
+- OLED-based system diagnostics
+- Acoustic alerts through a piezo buzzer
+- C++ firmware for hardware control
+
+## Built With
+
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 
 ## Hardware
 
-- Arduino
-- HC-SR04 ultrasonic sensor
-- HC-05 Bluetooth module
-- SSD1306 OLED
+- Arduino microcontroller
+- HC-SR04 ultrasonic sensors
 - L298N motor driver
-- 4WD chassis
+- HC-05 Bluetooth module
+- SSD1306 OLED display
 - Piezo buzzer
-
-## Software
-
-- C++
-- Arduino
-- I2C
-- Serial communication
-- Sensor-based control logic
-
-## Project Status
-
-Work in progress.
 
 ## What I'm Learning
 
-This project is helping me understand:
-
 - Embedded C++
 - Microcontroller programming
-- Sensor input and decision logic
-- Hardware/software integration
-- Real-time control concepts
+- Sensor integration
+- Motor control
+- Real-time firmware design
+- Autonomous robotics
+- Hardware/software interaction
 
-## Future Plans
+## Project Status
 
-- Improve obstacle detection
-- Refine control logic
-- Add more sensors
-- Improve telemetry
-- Experiment with autonomous navigation
+🚧 Active development
+
+## Roadmap
+
+- [x] Basic motor control
+- [x] Ultrasonic obstacle detection
+- [x] Bluetooth manual control
+- [x] OLED diagnostics
+- [ ] Improve navigation logic
+- [ ] Refine sensor fusion
+- [ ] Improve autonomous behaviour
+- [ ] Hardware telemetry improvements
+
+## Author
+
+**Sampan Mishra**
+
+Interested in embedded systems, robotics and low-level software.
