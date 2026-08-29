@@ -1,48 +1,54 @@
-# 🏎️ OmniSense-Embedded-robo
+# OmniSense Embedded Robo
 
-[![Language](https://img.shields.io/badge/Language-C%2B%2B-blue.svg)](https://en.cppreference.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Embedded%20Systems-orange.svg)]()
-[![Build](https://img.shields.io/badge/Firmware-Active%20Dev-brightgreen.svg)]()
+An embedded robotics project built around a 4WD rover using C++ and Arduino-based hardware.
 
-> Custom C++ firmware for an autonomous 4WD rover. Combines ultrasonic sensor processing, wireless Bluetooth control, live I2C OLED diagnostic display, and acoustic buzzer alerts.
+The project combines obstacle detection, motor control, Bluetooth input and a small OLED interface into a single firmware system.
 
----
+## Features
 
-## 🛠️ System Architecture
+- Ultrasonic obstacle detection
+- Autonomous obstacle-avoidance mode
+- Manual Bluetooth control
+- OLED status display
+- Buzzer alerts
+- Motor control
 
-Custom state-machine C++ firmware designed for continuous sensor polling and real-time execution across peripherals.
-[ Ultrasonic HC-SR04 ] ---
+## Hardware
 
-[ Bluetooth HC-05    ] ------> [ C++ Core Logic ] ---> [ L298N Motor Driver ]
-[ OLED Telemetry     ] ---/          |
-v
-[ OLED & Buzzer Alerts ]
----
+- Arduino
+- HC-SR04 ultrasonic sensor
+- HC-05 Bluetooth module
+- SSD1306 OLED
+- L298N motor driver
+- 4WD chassis
+- Piezo buzzer
 
-## ⚡ Technical Highlights
+## Software
 
-* **🛡️ Collision Avoidance:** Ultrasonic distance calculations written in C++ for dynamic obstacle navigation.
-* **📡 Dual Control Modes:** Real-time toggling between autonomous navigation and manual Bluetooth (BT) override.
-* **📊 Diagnostic Display:** OLED telemetry dashboard driven via I2C showing active sensor values and drive states.
-* **🔊 Acoustic Alerts:** Multi-frequency piezo buzzer output for power-on checks and obstacle proximity feedback.
-* **⚡ Precision Execution:** Optimized C++ motor control functions for fast direction and pulse width handling.
+- C++
+- Arduino
+- I2C
+- Serial communication
+- Sensor-based control logic
 
----
+## Project Status
 
-## 🔌 Exact Pinout & Component Wiring
+Work in progress.
 
-| Component | Pin / Interface | Function |
-| :--- | :--- | :--- |
-| **Ultrasonic Trigger (HC-SR04)** | `Pin 9` | Proximity Pulse Output |
-| **Ultrasonic Echo (HC-SR04)** | `Pin 10` | Signal Echo Input |
-| **Bluetooth Module (HC-05)** | `Pins 2 / 3` | Serial Data RX / TX |
-| **OLED Display (0.96" I2C)** | `SDA (A4) / SCL (A5)` | Real-Time Diagnostic UI |
-| **Piezo Buzzer** | `Pin 8` | Acoustic Proximity Alert |
-| **L298N Motor Driver** | `Pins 4, 5, 6, 7` | 4WD Motor Direction & Power |
+## What I'm Learning
 
----
+This project is helping me understand:
 
-## 👨‍💻 Developer Note
+- Embedded C++
+- Microcontroller programming
+- Sensor input and decision logic
+- Hardware/software integration
+- Real-time control concepts
 
-Developed by **Sampan Mishra** to demonstrate practical C++ embedded firmware development, hardware interface integration, and state-machine control for scholarship and engineering evaluation.
+## Future Plans
+
+- Improve obstacle detection
+- Refine control logic
+- Add more sensors
+- Improve telemetry
+- Experiment with autonomous navigation
